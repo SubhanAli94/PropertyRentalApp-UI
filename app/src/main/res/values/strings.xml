@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Property</string>
+    <string name="search_property">Search Property</string>
 </resources>
