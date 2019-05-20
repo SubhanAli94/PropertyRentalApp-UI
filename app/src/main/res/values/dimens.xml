@@ -2,4 +2,5 @@
 <resources>
     <dimen name="dp20">20dp</dimen>
     <dimen name="appBarHeight56dp">56dp</dimen>
+    <dimen name="dp120">120</dimen>
 </resources>

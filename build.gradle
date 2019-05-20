@@ -20,6 +20,7 @@ buildscript {
         espressoVersion = '3.1.0'
         kotlin_version = '1.3.31'
         androidGradlePluginVersion = '3.4.1'
+        recyclerViewVersion = '1.0.0'
     }
     repositories {
         google()

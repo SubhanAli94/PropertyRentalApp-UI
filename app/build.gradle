@@ -31,6 +31,7 @@ dependencies {
     //UI
     implementation "androidx.appcompat:appcompat:$appCompatVersion"
     implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    implementation "androidx.recyclerview:recyclerview:$recyclerViewVersion"
 
     //Local Unit Tests
     testImplementation "junit:junit:$junitVersion"

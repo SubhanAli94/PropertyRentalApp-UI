@@ -30,7 +30,17 @@
             android:layout_height="0.5dp"
             android:id="@+id/view"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/txt_searchProperty"
-            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_searchProperty"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="10dp"
             android:background="@color/colorPrimary"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView_mainActivity"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>
