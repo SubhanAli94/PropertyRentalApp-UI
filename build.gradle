@@ -22,6 +22,7 @@ buildscript {
         androidGradlePluginVersion = '3.4.1'
         recyclerViewVersion = '1.0.0'
         materialVersion = '1.0.0'
+        lifecycleVersion = '2.0.0'
     }
     repositories {
         google()
