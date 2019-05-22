@@ -7,27 +7,28 @@
         android:orientation="vertical"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        tools:context=".MainActivity">
+        tools:context=".ui.MainActivity">
 
-    <EditText
+    <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txt_searchProperty"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:drawablePadding="@dimen/dp5"
             app:layout_constraintTop_toTopOf="parent"
             android:textAlignment="textStart"
             android:lineSpacingExtra="0dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginStart="22dp"
-            android:layout_marginEnd="22dp"
-            android:textSize="22sp"
+            android:layout_marginTop="@dimen/dp18"
+            android:layout_marginStart="@dimen/dp22"
+            android:layout_marginEnd="@dimen/dp22"
+            android:textSize="@dimen/sp22"
             android:background="@null"
-            android:hint="@string/search_property"/>
+            android:hint="@string/location"/>
     <View
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="@dimen/dpPoint5"
             android:id="@+id/view"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -35,12 +36,26 @@
             app:layout_constraintHorizontal_bias="0.0"
             android:layout_marginTop="10dp"
             android:background="@color/colorPrimary"/>
-    <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/recyclerView_mainActivity"
+    <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/frameLayout_mainActivity"
             app:layout_constraintEnd_toEndOf="@id/view"
+            android:layout_marginBottom="56dp"
+            android:layout_marginTop="56dp"
             app:layout_constraintStart_toStartOf="@id/view"
             app:layout_constraintTop_toBottomOf="@+id/view"
     />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottomNavigation_mainActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorWhite"
+            app:menu="@menu/bottom_navigation_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
