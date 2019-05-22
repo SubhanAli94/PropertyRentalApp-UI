@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Property</string>
-    <string name="search_property">Search Property</string>
+    <string name="search">Search</string>
+    <string name="location">Location</string>
+    <string name="myAccount">Account</string>
+    <string name="favorite">Favorite</string>
 </resources>

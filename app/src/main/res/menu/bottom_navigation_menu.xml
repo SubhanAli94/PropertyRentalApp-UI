@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/search_menuItem"
+            android:title="@string/search"
+            android:icon="@drawable/ic_search_black_24dp"/>
+
+    <item
+            android:id="@+id/saved_menuItem"
+            android:title="@string/favorite"
+            android:icon="@drawable/ic_favorite_border_black_24dp"/>
+
+    <item
+            android:id="@+id/account_menuItem"
+            android:title="@string/myAccount"
+            android:icon="@drawable/ic_account_circle_black_24dp"/>
+</menu>
