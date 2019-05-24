@@ -6,9 +6,9 @@
         android:layout_height="match_parent"
         tools:context=".ui.fragments.PropertyListingFragment">
 
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Hello"/>
 
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_propertyListingFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 </FrameLayout>
