@@ -47,4 +47,9 @@ dependencies {
     //Instrumentation Tests
     androidTestImplementation "androidx.test:runner:$runnerVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
+
+    //network
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.0.0-alpha02'
+    implementation 'com.squareup.retrofit2:retrofit-converters:2.5.0'
 }
