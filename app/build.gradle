@@ -51,6 +51,6 @@ dependencies {
     //network
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.retrofit2:retrofit-converters:$retrofitVersion"
-    implementation 'com.squareup.okhttp3:logging-interceptor:4.0.0-alpha02'
-    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3Version"
+    implementation "com.squareup.picasso:picasso:$picassoVersion"
 }
