@@ -23,6 +23,7 @@ buildscript {
         recyclerViewVersion = '1.0.0'
         materialVersion = '1.0.0'
         lifecycleVersion = '2.0.0'
+        retrofitVersion ='2.5.0'
     }
     repositories {
         google()
@@ -30,7 +31,7 @@ buildscript {
 
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:$androidGradlePluginVersion"
+        classpath "com.android.tools.build:gradle:${androidGradlePluginVersion}"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
