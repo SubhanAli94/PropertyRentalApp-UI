@@ -6,7 +6,6 @@
         android:layout_height="match_parent"
         tools:context=".ui.fragments.PropertyListingFragment">
 
-
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_propertyListingFragment"
             android:layout_width="match_parent"
