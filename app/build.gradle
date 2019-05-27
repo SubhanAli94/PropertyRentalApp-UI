@@ -48,9 +48,15 @@ dependencies {
     androidTestImplementation "androidx.test:runner:$runnerVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
 
-    //network
+    //network - retrofit
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.retrofit2:retrofit-converters:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+
+    //network - okhttp
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3Version"
+
+    //network - imageLoading
     implementation "com.squareup.picasso:picasso:$picassoVersion"
 }
