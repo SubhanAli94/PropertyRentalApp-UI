@@ -20,6 +20,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    dataBinding{
+        enabled = true
+    }
 }
 
 dependencies {
@@ -59,4 +63,5 @@ dependencies {
 
     //network - imageLoading
     implementation "com.squareup.picasso:picasso:$picassoVersion"
+    implementation "com.google.android.gms:play-services-location:$playServicesLocationVersion"
 }
