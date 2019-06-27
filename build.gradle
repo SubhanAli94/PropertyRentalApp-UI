@@ -26,7 +26,7 @@ buildscript {
         retrofitVersion ='2.5.0'
         okhttp3Version = '4.0.0-alpha02'
         picassoVersion = '2.71828'
-        playServicesLocationVersion = '16.0.0'
+        playServicesLocationVersion = '17.0.0'
     }
     repositories {
         google()

@@ -63,5 +63,7 @@ dependencies {
 
     //network - imageLoading
     implementation "com.squareup.picasso:picasso:$picassoVersion"
+
+    //Google Play Services
     implementation "com.google.android.gms:play-services-location:$playServicesLocationVersion"
 }

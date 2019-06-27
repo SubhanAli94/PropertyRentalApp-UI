@@ -7,8 +7,9 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiManager{
-    private val BASE_URL = "";
+    private val BASE_URL = "https://werx.retsrabbit.com/api"
     private var retrofit: Retrofit? = null
+    private var apiService: ApiInterface? = null
 
     private fun initRetrofitInstance() {
         if (retrofit == null) {
@@ -27,5 +28,6 @@ object ApiManager{
                 .build()
 
         }
+        apiService = retrofit!!.create(ApiInterface::class.java)
     }
 }
