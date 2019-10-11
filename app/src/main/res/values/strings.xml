@@ -4,4 +4,9 @@
     <string name="location">Location</string>
     <string name="myAccount">Account</string>
     <string name="favorite">Favorite</string>
+    <string name="splash_appDescription">Discover your dream home with us. It\'s where your heart is. It\'s where you make it.</string>
+    <string name="splash_subTitle">Discover your new home</string>
+    <string name="splash_appTitle">Rent Property</string>
+    <string name="button_register_txt">Register</string>
+    <string name="btn_login_txt">Login</string>
 </resources>

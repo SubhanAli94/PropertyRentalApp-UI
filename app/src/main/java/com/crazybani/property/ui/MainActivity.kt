@@ -89,9 +89,9 @@ class MainActivity : AppCompatActivity(), GoogleApiClient.ConnectionCallbacks,
     override fun onPause() {
         super.onPause()
 
-        if (mGoogleApiClient != null && mGoogleApiClient.isConnected){
-            LocationServices.getFusedLocationProviderClient(this).removeLocationUpdates()
-        }
+//        if (mGoogleApiClient != null && mGoogleApiClient.isConnected){
+//            LocationServices.getFusedLocationProviderClient(this).removeLocationUpdates()
+//        }
     }
 
     override fun onDestroy() {

@@ -8,4 +8,13 @@
     <dimen name="dp22">22dp</dimen>
     <dimen name="sp22">22sp</dimen>
     <dimen name="dpPoint5">0.5dp</dimen>
+    <dimen name="sp42">42sp</dimen>
+    <dimen name="sp32">32sp</dimen>
+    <dimen name="sp16">16sp</dimen>
+    <dimen name="dp30">30dp</dimen>
+    <dimen name="dp15">15dp</dimen>
+    <dimen name="sp14">14sp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp46">46dp</dimen>
+    <dimen name="dp56">56dp</dimen>
 </resources>
