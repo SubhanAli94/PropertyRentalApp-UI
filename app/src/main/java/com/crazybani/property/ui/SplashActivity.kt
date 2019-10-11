@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import com.crazybani.property.LoginActivity
+import com.crazybani.property.WelcomeActivity
 import com.crazybani.property.R
 
 class SplashActivity : AppCompatActivity() {
@@ -13,7 +13,7 @@ class SplashActivity : AppCompatActivity() {
     private val DELAY = 3000L
     private var mRunnable: Runnable = Runnable {
         if (!isFinishing) {
-            var intent = Intent(this, LoginActivity::class.java)
+            var intent = Intent(this, WelcomeActivity::class.java)
             startActivity(intent)
         }
     }

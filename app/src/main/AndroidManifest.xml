@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".LoginActivity"
+                android:name=".WelcomeActivity"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoStatusBar" />
         <activity
                 android:name=".ui.MainActivity"
