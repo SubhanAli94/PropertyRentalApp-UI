@@ -9,7 +9,7 @@ buildscript {
 
         //SDK and tools
         compileSdkVersion = 28
-        minSdkVersion = 22
+        minSdkVersion = 23
         targetSdkVersion = 28
 
         //App Dependencies
