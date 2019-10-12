@@ -13,7 +13,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
-                android:name=".ui.SplashActivity"
+                android:name=".ui.activities.LoginActivity"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoStatusBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,10 +22,17 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".WelcomeActivity"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoStatusBar" />
+                android:name=".ui.activities.WelcomeActivity"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity
-                android:name=".ui.MainActivity"
+                android:name=".ui.activities.MainActivity"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+                android:name=".ui.activities.SplashActivity"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+
+        <activity
+                android:name=".ui.activities.RegistrationActivity"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
     </application>
 

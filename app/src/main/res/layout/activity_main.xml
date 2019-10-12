@@ -17,7 +17,7 @@
             android:orientation="vertical"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            tools:context=".ui.MainActivity">
+            tools:context=".ui.activities.MainActivity">
 
         <TextView
                 android:layout_width="match_parent"

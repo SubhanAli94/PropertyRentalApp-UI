@@ -17,4 +17,6 @@
     <dimen name="dp10">10dp</dimen>
     <dimen name="dp46">46dp</dimen>
     <dimen name="dp56">56dp</dimen>
+    <dimen name="dp26">26dp</dimen>
+    <dimen name="sp12">12sp</dimen>
 </resources>
