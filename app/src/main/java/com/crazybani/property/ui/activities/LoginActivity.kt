@@ -7,6 +7,7 @@ import android.text.Spannable
 import com.crazybani.property.R
 import android.text.SpannableString
 import android.text.TextPaint
+import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
 import android.view.View
 import android.widget.Button
@@ -54,6 +55,7 @@ class LoginActivity : AppCompatActivity() {
             Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
         )
         txt_registerNow_loginActivity.text = span
+        txt_registerNow_loginActivity.movementMethod = LinkMovementMethod.getInstance()
     }
 
     private fun initForgotPasswordDialog() {
