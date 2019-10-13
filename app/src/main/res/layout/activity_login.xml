@@ -8,12 +8,14 @@
         tools:context=".ui.activities.LoginActivity">
 
     <ImageView
+            android:id="@+id/ic_back_loginActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp26"
             android:src="@drawable/ic_keyboard_backspace_black_24dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="backButtonClicked"/>
 
     <androidx.constraintlayout.widget.Guideline
             android:id="@+id/topGuideline"

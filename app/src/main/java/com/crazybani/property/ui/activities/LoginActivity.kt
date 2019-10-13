@@ -6,14 +6,12 @@ import android.os.Bundle
 import android.text.Spannable
 import com.crazybani.property.R
 import android.text.SpannableString
-import android.text.TextPaint
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import com.crazybani.property.utils.withClickableSpan
 import kotlinx.android.synthetic.main.activity_login.*
 
 
@@ -30,11 +28,6 @@ class LoginActivity : AppCompatActivity() {
         initForgotPasswordDialog()
 
         initRegisterNow(registerNowString)
-    }
-
-
-    override fun onBackPressed() {
-        super.onBackPressed()
     }
 
     fun openForgotPasswordDialog(view: View) {
@@ -68,5 +61,9 @@ class LoginActivity : AppCompatActivity() {
         }
 
         dialog.setView(dialogView)
+    }
+
+    fun backButtonClicked(view: View) {
+        finish()
     }
 }
