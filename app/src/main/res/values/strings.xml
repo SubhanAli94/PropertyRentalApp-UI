@@ -13,4 +13,6 @@
     <string name="registerNow">Don\'t have an account? <b>Register now</b></string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="send_me_link">Send me link</string>
+    <string name="forgotPasswordWithoutUnderline">Forgot Password</string>
 </resources>

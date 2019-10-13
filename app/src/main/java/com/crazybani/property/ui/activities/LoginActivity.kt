@@ -9,17 +9,38 @@ import android.text.SpannableString
 import android.text.TextPaint
 import android.text.style.ClickableSpan
 import android.view.View
+import android.widget.Button
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.crazybani.property.utils.withClickableSpan
 import kotlinx.android.synthetic.main.activity_login.*
 
 
 class LoginActivity : AppCompatActivity() {
 
+    private lateinit var dialog: AlertDialog
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         var registerNowString = getString(R.string.registerNow)
 
+
+        initForgotPasswordDialog()
+
+        initRegisterNow(registerNowString)
+    }
+
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+    }
+
+    fun openForgotPasswordDialog(view: View) {
+        dialog.show()
+    }
+
+    private fun initRegisterNow(registerNowString: String) {
         var span = SpannableString(registerNowString)
         span.setSpan(
             object : ClickableSpan() {
@@ -35,7 +56,15 @@ class LoginActivity : AppCompatActivity() {
         txt_registerNow_loginActivity.text = span
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
+    private fun initForgotPasswordDialog() {
+        dialog = AlertDialog.Builder(this).create()
+        var dialogView = this.layoutInflater.inflate(R.layout.forgot_password_dialog, null)
+        var button = dialogView.findViewById<Button>(R.id.btn_sendMeLink_forgotPassword_dialog)
+        button.setOnClickListener {
+            Toast.makeText(this, "Email sent successfully!", Toast.LENGTH_SHORT).show()
+            dialog.dismiss()
+        }
+
+        dialog.setView(dialogView)
     }
 }
