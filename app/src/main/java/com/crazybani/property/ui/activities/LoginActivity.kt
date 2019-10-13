@@ -20,12 +20,6 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         var registerNowString = getString(R.string.registerNow)
 
-//        txt_registerNow_loginActivity.text = SpannableString(registerNowString).withClickableSpan("Register now") {
-//            startActivity(Intent(this@LoginActivity, RegistrationActivity::class.java))
-//            finish()
-//        }.toString()
-
-
         var span = SpannableString(registerNowString)
         span.setSpan(
             object : ClickableSpan() {
@@ -39,5 +33,9 @@ class LoginActivity : AppCompatActivity() {
             Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
         )
         txt_registerNow_loginActivity.text = span
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
     }
 }

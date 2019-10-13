@@ -43,27 +43,92 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.28" />
 
+    <TextView
+            android:id="@+id/txt_email_loginActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp30"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/email"
+            android:textSize="@dimen/sp16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/midGuideLine" />
+
     <EditText
             android:id="@+id/edt_email_loginActivity"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dp30"
             android:layout_marginEnd="@dimen/dp30"
-            android:hint="Email"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_check_charcoal_24dp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="someone@email.com"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp15"
+            android:paddingBottom="@dimen/dp10"
+            android:textSize="@dimen/sp14"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/midGuideLine" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_email_loginActivity" />
 
-    <EditText
+
+    <View
             android:layout_width="0dp"
+            android:layout_height=".5dp"
+            android:background="@color/charcoal"
+            app:layout_constraintEnd_toEndOf="@id/edt_email_loginActivity"
+            app:layout_constraintStart_toStartOf="@+id/edt_email_loginActivity"
+            app:layout_constraintTop_toBottomOf="@id/edt_email_loginActivity" />
+
+    <TextView
+            android:id="@+id/txt_password_loginActivity"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dp30"
-            android:layout_marginTop="@dimen/dp20"
-            android:layout_marginEnd="@dimen/dp30"
-            android:hint="Password"
+            android:layout_marginTop="@dimen/dp26"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/password"
+            android:textSize="@dimen/sp16"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edt_email_loginActivity" />
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_password_loginActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp30"
+            android:layout_marginEnd="@dimen/dp30"
+            android:background="@android:color/transparent"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_password_loginActivity"
+            app:passwordToggleEnabled="true">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:hint="* * * *"
+                android:textSize="@dimen/sp14" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height=".5dp"
+            android:background="@color/charcoal"
+            app:layout_constraintEnd_toEndOf="@id/edt_password_loginActivity"
+            app:layout_constraintStart_toStartOf="@+id/edt_password_loginActivity"
+            app:layout_constraintTop_toBottomOf="@id/edt_password_loginActivity" />
 
 
     <Button
@@ -106,8 +171,8 @@
             android:fontFamily="@font/poppins_semibold"
             android:textAlignment="center"
             android:textColor="@android:color/darker_gray"
-            android:textSize="@dimen/sp12"
             android:textColorLink="@color/gray14"
+            android:textSize="@dimen/sp12"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

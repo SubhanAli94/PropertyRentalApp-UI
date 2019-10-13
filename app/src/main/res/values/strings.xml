@@ -11,4 +11,6 @@
     <string name="btn_login_txt">Login</string>
     <string name="forgotPassword"><u>Forgot Password</u></string>
     <string name="registerNow">Don\'t have an account? <b>Register now</b></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
 </resources>
