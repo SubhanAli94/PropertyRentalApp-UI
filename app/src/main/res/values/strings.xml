@@ -16,4 +16,6 @@
     <string name="send_me_link">Send me link</string>
     <string name="forgotPasswordWithoutUnderline">Forgot Password</string>
     <string name="find_your_house">Find your house</string>
+    <string name="results_in_area">30 results in your area</string>
+    <string name="popular">Popular</string>
 </resources>

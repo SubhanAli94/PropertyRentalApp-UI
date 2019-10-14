@@ -23,4 +23,6 @@
     <dimen name="dp34">34dp</dimen>
     <dimen name="dp1">1dp</dimen>
     <dimen name="sp24">24sp</dimen>
+    <dimen name="sp18">18sp</dimen>
+    <dimen name="dp220">220dp</dimen>
 </resources>

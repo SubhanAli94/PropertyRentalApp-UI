@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="220dp"
+        android:layout_height="290dp">
+
+    <ImageView
+            android:id="@+id/img_house_popularItem"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/popular_house_1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/txt_homeName_popularItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Red House"
+            android:textColor="@color/charcoal"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintLeft_toLeftOf="@+id/img_house_popularItem"
+            app:layout_constraintTop_toBottomOf="@+id/img_house_popularItem" />
+
+    <TextView
+            android:id="@+id/txt_price_homeActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="$35000/yr"
+            android:textColor="@color/charcoal"
+            android:textSize="@dimen/sp12"
+            app:layout_constraintLeft_toLeftOf="@+id/txt_homeName_popularItem"
+            app:layout_constraintTop_toBottomOf="@+id/txt_homeName_popularItem" />
+    <TextView
+            android:id="@+id/txt_address_homeActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="49 London Street, New York"
+            android:textColor="@color/charcoal"
+            android:textSize="@dimen/sp12"
+            app:layout_constraintLeft_toLeftOf="@+id/txt_price_homeActivity"
+            app:layout_constraintTop_toBottomOf="@+id/txt_price_homeActivity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
