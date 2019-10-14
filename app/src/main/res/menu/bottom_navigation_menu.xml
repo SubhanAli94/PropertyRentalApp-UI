@@ -4,7 +4,7 @@
     <item
             android:id="@+id/search_menuItem"
             android:title="@string/search"
-            android:icon="@drawable/ic_search_black_24dp"/>
+            android:icon="@drawable/ic_search_charcoal_24dp"/>
 
     <item
             android:id="@+id/saved_menuItem"

@@ -22,4 +22,5 @@
     <dimen name="dp32">32dp</dimen>
     <dimen name="dp34">34dp</dimen>
     <dimen name="dp1">1dp</dimen>
+    <dimen name="sp24">24sp</dimen>
 </resources>

@@ -13,14 +13,23 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
-                android:name=".ui.activities.SplashActivity"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoStatusBar">
+                android:name=".ui.activities.HomeActivity"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--        <activity-->
+        <!--                android:name=".ui.activities.SplashActivity"-->
+        <!--                android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoStatusBar">-->
+        <!--            <intent-filter>-->
+        <!--                <action android:name="android.intent.action.MAIN" />-->
+
+        <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+        <!--            </intent-filter>-->
+        <!--        </activity>-->
         <activity
                 android:name=".ui.activities.WelcomeActivity"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
@@ -30,7 +39,6 @@
         <activity
                 android:name=".ui.activities.LoginActivity"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
-
         <activity
                 android:name=".ui.activities.RegistrationActivity"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />

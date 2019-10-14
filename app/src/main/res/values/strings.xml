@@ -15,4 +15,5 @@
     <string name="password">Password</string>
     <string name="send_me_link">Send me link</string>
     <string name="forgotPasswordWithoutUnderline">Forgot Password</string>
+    <string name="find_your_house">Find your house</string>
 </resources>
