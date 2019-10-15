@@ -66,4 +66,9 @@ class LoginActivity : AppCompatActivity() {
     fun backButtonClicked(view: View) {
         finish()
     }
+
+    fun navigateToHomeActivity(view: View) {
+        startActivity(Intent(this, HomeActivity::class.java))
+        finishAffinity()
+    }
 }

@@ -8,17 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen.NoStatusBar"
-           parent="Theme.AppCompat.Light.NoActionBar.FullScreen">
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen.NoStatusBar" parent="Theme.AppCompat.Light.NoActionBar.FullScreen">
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen"
-           parent="AppTheme">
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="AppTheme">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="android:statusBarColor">@color/colorWhite</item>
         <item name="android:windowLightStatusBar">true</item>
+        <item name="android:screenOrientation">portrait</item>
     </style>
 
 </resources>
