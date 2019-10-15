@@ -22,10 +22,24 @@
             android:fontFamily="@font/poppins_semibold"
             android:text="@string/find_your_house"
             android:textAlignment="center"
-            android:textColor="@color/charcoal"
+            android:textColor="@color/gray14"
             android:textSize="@dimen/sp24"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="@+id/topGuideline_homeActivity" />
+
+    <TextView
+            android:id="@+id/txt_results_homeActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp30"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/results_in_area"
+            android:textAlignment="center"
+            android:textColor="@color/charcoal"
+            android:textSize="@dimen/sp12"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title_homeActivity" />
+
     <!--  Search Image View  -->
     <ImageView
             android:layout_width="wrap_content"
@@ -47,5 +61,42 @@
             app:layout_constraintBottom_toBottomOf="@+id/txt_title_homeActivity"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="@+id/txt_title_homeActivity" />
+
+    <!--   Popular Listings -->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_results_homeActivity">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/txt_popular_homeActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp30"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/popular"
+                    android:textAlignment="center"
+                    android:textColor="@color/charcoal"
+                    android:textSize="@dimen/sp18" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_popular_homeActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"/>
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
