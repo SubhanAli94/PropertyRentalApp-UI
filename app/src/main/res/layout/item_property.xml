@@ -5,7 +5,8 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp120"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:id="@+id/ll_container_propertyItem">
 
     <ImageView
             android:id="@+id/img_property_propertyItem"
@@ -25,18 +26,18 @@
                 android:id="@+id/txt_propertyName_propertyItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
                 android:textColor="@color/Black"
                 android:textSize="@dimen/sp14"
-                android:fontFamily="@font/poppins_regular"
                 tools:text="Blue Bay Apartment" />
 
         <TextView
                 android:id="@+id/txt_propertyPrice_propertyItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
                 android:textColor="@color/charcoal"
                 android:textSize="@dimen/sp12"
-                android:fontFamily="@font/poppins_regular"
                 tools:text="40,000 AED/yearl" />
 
         <LinearLayout
@@ -50,8 +51,8 @@
                     android:id="@+id/txt_propertyType_propertyItem"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_regular"
                     android:layout_weight="1.5"
+                    android:fontFamily="@font/poppins_regular"
                     android:textColor="@color/charcoal"
                     android:textSize="@dimen/sp12"
                     tools:text="Office Space" />
@@ -74,11 +75,11 @@
                         android:id="@+id/txt_bedCounter_propertyItem"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
-                        android:textSize="@dimen/sp12"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
-                        android:text="1" />
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1"
+                        android:textSize="@dimen/sp12" />
 
                 <ImageView
                         android:id="@+id/img_bathtub_propertyItem"
@@ -91,11 +92,11 @@
                         android:id="@+id/txt_bathtubCounter_propertyItem"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
-                        android:textSize="@dimen/sp12"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
-                        android:text="1" />
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1"
+                        android:textSize="@dimen/sp12" />
             </LinearLayout>
         </LinearLayout>
 

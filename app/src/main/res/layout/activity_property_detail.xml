@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cl_container_detailActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.PropertyDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp30">
+
+
+        <ImageView
+                android:id="@+id/img_property_detailActivity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp220"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/popular_house_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/topGuideline_detailActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.02" />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp56"
+                android:background="@drawable/gradient_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+                android:id="@+id/ic_back_detailActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp26"
+                android:layout_marginTop="@dimen/dp7"
+                android:onClick="backButtonClicked"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/topGuideline_detailActivity" />
+
+        <TextView
+                android:id="@+id/txt_propertyName_detailActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp30"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Red House"
+                android:textAlignment="center"
+                android:textColor="@color/gray14"
+                android:textSize="@dimen/sp24"
+                app:layout_constraintLeft_toRightOf="@+id/ic_back_detailActivity"
+                app:layout_constraintTop_toTopOf="@+id/topGuideline_detailActivity" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_otherImages_detailActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:clipToPadding="false"
+                android:paddingStart="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_property_detailActivity" />
+
+
+        <TextView
+                android:id="@+id/txt_location_detailActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp10"
+                android:drawableStart="@drawable/ic_location_on_charcoal_24dp"
+                android:drawablePadding="@dimen/dp10"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="@dimen/sp16"
+                app:layout_constraintStart_toStartOf="@+id/rv_otherImages_detailActivity"
+                app:layout_constraintTop_toBottomOf="@+id/rv_otherImages_detailActivity"
+                tools:text="New York" />
+
+        <TextView
+                android:id="@+id/txt_price_detailActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp18"
+                android:layout_marginTop="12dp"
+                android:drawableStart="@drawable/ic_money"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/sp16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_location_detailActivity"
+                tools:text="$10000/year" />
+
+        <LinearLayout
+                android:id="@+id/ll_sizeBeds_detailActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_price_detailActivity">
+
+            <TextView
+                    android:id="@+id/txt_size_detailActivity"
+                    android:layout_width="@dimen/dp140"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginStart="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/bordered_gray_rect"
+                    android:drawableStart="@drawable/ic_size"
+                    android:fontFamily="@font/poppins_regular"
+                    android:padding="@dimen/dp10"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/sp12"
+                    tools:text="2300sqft" />
+
+            <TextView
+                    android:id="@+id/txt_beds_detailActivity"
+                    android:layout_width="@dimen/dp140"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginStart="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/bordered_gray_rect"
+                    android:drawableStart="@drawable/ic_bed"
+                    android:fontFamily="@font/poppins_regular"
+                    android:padding="@dimen/dp10"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/sp12"
+                    app:layout_constraintLeft_toRightOf="@+id/txt_size_detailActivity"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_price_detailActivity"
+                    tools:text="6 Beds" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ll_kitchensBaths_detailActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_sizeBeds_detailActivity">
+
+            <TextView
+                    android:id="@+id/txt_kitchens_detailActivity"
+                    android:layout_width="@dimen/dp140"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginStart="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/bordered_gray_rect"
+                    android:drawableStart="@drawable/ic_kitchens"
+                    android:fontFamily="@font/poppins_regular"
+                    android:padding="@dimen/dp10"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/sp12"
+                    tools:text="4 Kitchens" />
+
+            <TextView
+                    android:id="@+id/txt_baths_detailActivity"
+                    android:layout_width="@dimen/dp140"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginStart="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/bordered_gray_rect"
+                    android:drawableStart="@drawable/ic_bathtub"
+                    android:fontFamily="@font/poppins_regular"
+                    android:padding="@dimen/dp10"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/sp12"
+                    app:layout_constraintLeft_toRightOf="@+id/txt_size_detailActivity"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_price_detailActivity"
+                    tools:text="8 Bathrooms" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ll_garageGardens_detailActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_kitchensBaths_detailActivity">
+
+            <TextView
+                    android:id="@+id/txt_garage_detailActivity"
+                    android:layout_width="@dimen/dp140"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginStart="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/bordered_gray_rect"
+                    android:drawableStart="@drawable/ic_garage"
+                    android:fontFamily="@font/poppins_regular"
+                    android:padding="@dimen/dp10"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/sp12"
+                    tools:text="2 Garages" />
+
+            <TextView
+                    android:id="@+id/txt_gardens_detailActivity"
+                    android:layout_width="@dimen/dp140"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginStart="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/bordered_gray_rect"
+                    android:drawableStart="@drawable/ic_garden"
+                    android:fontFamily="@font/poppins_regular"
+                    android:padding="@dimen/dp10"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/sp12"
+                    app:layout_constraintLeft_toRightOf="@+id/txt_size_detailActivity"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_price_detailActivity"
+                    tools:text="2 Gardens" />
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/txt_descriptionLabel_detailActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp10"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/description"
+                android:textAlignment="center"
+                android:textColor="@color/gray14"
+                android:textSize="@dimen/sp16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_garageGardens_detailActivity" />
+
+        <TextView
+                android:id="@+id/txt_description_detailActivity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginEnd="@dimen/dp15"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Description"
+                android:textSize="@dimen/sp14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/txt_descriptionLabel_detailActivity"
+                app:layout_constraintTop_toBottomOf="@+id/txt_descriptionLabel_detailActivity" />
+
+        <Button
+                android:id="@+id/btn_rent_loginActivity"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp56"
+                android:layout_marginStart="@dimen/dp30"
+                android:layout_marginEnd="@dimen/dp30"
+                android:layout_marginTop="@dimen/dp15"
+                android:background="@drawable/btn_capsule_gray14"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/btn_rent_detailActivity"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp16"
+                android:onClick="onClickRentButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_description_detailActivity" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

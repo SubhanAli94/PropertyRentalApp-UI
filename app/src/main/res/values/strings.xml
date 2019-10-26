@@ -19,4 +19,11 @@
     <string name="results_in_area">30 results in your area</string>
     <string name="popular">Popular</string>
     <string name="allProperties">All Properties</string>
+    <string name="bedrooms">Bedroom(s)</string>
+    <string name="kitchens">Kitchen(s)</string>
+    <string name="bathrooms">Bathroom(s)</string>
+    <string name="garages">Garage(s)</string>
+    <string name="gardens">Garden(s)</string>
+    <string name="description">Description</string>
+    <string name="btn_rent_detailActivity">Rent</string>
 </resources>

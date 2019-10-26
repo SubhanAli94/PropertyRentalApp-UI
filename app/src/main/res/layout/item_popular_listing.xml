@@ -11,9 +11,10 @@
             android:id="@+id/card_imgProperty_popularItem"
             android:layout_width="180dp"
             android:layout_height="150dp"
+            app:cardCornerRadius="@dimen/dp5"
+            app:cardElevation="@dimen/dp0"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="@dimen/dp5">
+            app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
                 android:id="@+id/img_house_popularItem"

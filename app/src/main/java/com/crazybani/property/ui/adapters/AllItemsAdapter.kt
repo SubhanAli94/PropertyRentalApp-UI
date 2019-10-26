@@ -1,16 +1,21 @@
 package com.crazybani.property.ui.adapters
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.crazybani.property.R
 import com.crazybani.property.models.PropertyModel
 import com.squareup.picasso.Picasso
 
-class AllItemsAdapter(var allItems: ArrayList<PropertyModel>) :
+class AllItemsAdapter(
+    var allItems: ArrayList<PropertyModel>,
+    var onPropertyItemClickListener: OnPropertyItemClickListener
+) :
     RecyclerView.Adapter<AllItemsAdapter.AllItemViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AllItemViewHolder {
@@ -35,9 +40,14 @@ class AllItemsAdapter(var allItems: ArrayList<PropertyModel>) :
                 txt_bathCounter.text = numOfBaths
             }
         }
+
+        holder.container.setOnClickListener {
+            onPropertyItemClickListener.onPropertyItemClick(position)
+        }
     }
 
     class AllItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        var container = itemView.findViewById<LinearLayout>(R.id.ll_container_propertyItem)
         var img_property = itemView.findViewById<ImageView>(R.id.img_property_propertyItem)
         var txt_name = itemView.findViewById<TextView>(R.id.txt_propertyName_propertyItem)
         var txt_price = itemView.findViewById<TextView>(R.id.txt_propertyPrice_propertyItem)

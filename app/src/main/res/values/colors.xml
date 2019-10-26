@@ -9,4 +9,6 @@
     <color name="Black">#000</color>
     <color name="gray14">#242424</color>
     <color name="charcoal">#444444</color>
+
+    <color name="colorPorcelain">#F2DFDFDF</color>
 </resources>

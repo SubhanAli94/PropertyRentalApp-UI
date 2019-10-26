@@ -25,7 +25,7 @@
                 android:id="@+id/txt_searchProperty"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:drawableLeft="@drawable/ic_location_on_charcoal_24dp"
                 android:drawablePadding="@dimen/dp5"
                 app:layout_constraintTop_toTopOf="parent"
                 android:textAlignment="textStart"

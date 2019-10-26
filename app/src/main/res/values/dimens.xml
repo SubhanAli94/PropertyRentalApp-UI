@@ -25,4 +25,8 @@
     <dimen name="sp24">24sp</dimen>
     <dimen name="sp18">18sp</dimen>
     <dimen name="dp220">220dp</dimen>
+    <dimen name="dp7">7dp</dimen>
+    <dimen name="dp0">0dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+    <dimen name="dp140">140dp</dimen>
 </resources>
