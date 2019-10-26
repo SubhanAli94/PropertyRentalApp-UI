@@ -26,4 +26,8 @@
     <string name="gardens">Garden(s)</string>
     <string name="description">Description</string>
     <string name="btn_rent_detailActivity">Rent</string>
+    <string name="registerWithUs">Register with us</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="btn_registration">Register</string>
 </resources>

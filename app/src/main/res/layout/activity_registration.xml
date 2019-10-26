@@ -7,14 +7,231 @@
         android:layout_height="match_parent"
         tools:context=".ui.activities.RegistrationActivity">
 
-
-    <TextView
-            android:id="@+id/textView"
+    <ImageView
+            android:id="@+id/ic_back_registrationActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Under Development"
+            android:layout_margin="@dimen/dp26"
+            android:onClick="backButtonClicked"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/topGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+    <TextView
+            android:id="@+id/txt_property"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp30"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/registerWithUs"
+            android:textAlignment="center"
+            android:textColor="@color/gray14"
+            android:textSize="@dimen/sp32"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/topGuideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/midGuideLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.21" />
+
+    <TextView
+            android:id="@+id/txt_firstName_registrationActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp30"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/firstName"
+            android:textSize="@dimen/sp16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/midGuideLine" />
+
+    <EditText
+            android:id="@+id/edt_firstName_registrationActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp30"
+            android:layout_marginEnd="@dimen/dp30"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_check_charcoal_24dp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Peter"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp15"
+            android:paddingBottom="@dimen/dp10"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_firstName_registrationActivity" />
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height=".5dp"
+            android:background="@color/charcoal"
+            app:layout_constraintEnd_toEndOf="@id/edt_firstName_registrationActivity"
+            app:layout_constraintStart_toStartOf="@+id/edt_firstName_registrationActivity"
+            app:layout_constraintTop_toBottomOf="@id/edt_firstName_registrationActivity" />
+
+    <TextView
+            android:id="@+id/txt_lastName_registrationActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp26"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/lastName"
+            android:textSize="@dimen/sp16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_firstName_registrationActivity" />
+
+    <EditText
+            android:id="@+id/edt_lastName_registrationActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp30"
+            android:layout_marginEnd="@dimen/dp30"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_check_charcoal_24dp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Johnson"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp15"
+            android:paddingBottom="@dimen/dp10"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_lastName_registrationActivity" />
+
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height=".5dp"
+            android:background="@color/charcoal"
+            app:layout_constraintEnd_toEndOf="@id/edt_lastName_registrationActivity"
+            app:layout_constraintStart_toStartOf="@+id/edt_lastName_registrationActivity"
+            app:layout_constraintTop_toBottomOf="@id/edt_lastName_registrationActivity" />
+
+    <TextView
+            android:id="@+id/txt_email_registrationActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp26"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/email"
+            android:textSize="@dimen/sp16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_lastName_registrationActivity" />
+
+    <EditText
+            android:id="@+id/edt_email_registrationActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp30"
+            android:layout_marginEnd="@dimen/dp30"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_check_charcoal_24dp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="someone@email.com"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp15"
+            android:paddingBottom="@dimen/dp10"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_email_registrationActivity" />
+
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height=".5dp"
+            android:background="@color/charcoal"
+            app:layout_constraintEnd_toEndOf="@id/edt_email_registrationActivity"
+            app:layout_constraintStart_toStartOf="@+id/edt_email_registrationActivity"
+            app:layout_constraintTop_toBottomOf="@id/edt_email_registrationActivity" />
+
+    <TextView
+            android:id="@+id/txt_password_registrationActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp26"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/password"
+            android:textSize="@dimen/sp16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_email_registrationActivity" />
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_password_registrationActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp30"
+            android:layout_marginEnd="@dimen/dp30"
+            android:background="@android:color/transparent"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_password_registrationActivity"
+            app:passwordToggleEnabled="true">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="* * * *"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textSize="@dimen/sp14" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height=".5dp"
+            android:background="@color/charcoal"
+            app:layout_constraintEnd_toEndOf="@id/edt_password_registrationActivity"
+            app:layout_constraintStart_toStartOf="@+id/edt_password_registrationActivity"
+            app:layout_constraintTop_toBottomOf="@id/edt_password_registrationActivity" />
+
+
+    <Button
+            android:id="@+id/btn_register_registrationActivity"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp56"
+            android:layout_marginStart="@dimen/dp30"
+            android:layout_marginEnd="@dimen/dp30"
+            android:layout_marginBottom="@dimen/dp10"
+            android:background="@drawable/btn_capsule_gray14"
+            android:fontFamily="@font/poppins_bold"
+            android:onClick="navigateToHomeActivity"
+            android:text="@string/btn_registration"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp16"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/edt_password_registrationActivity" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
