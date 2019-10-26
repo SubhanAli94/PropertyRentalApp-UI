@@ -1,4 +1,4 @@
-package com.crazybani.property.ui
+package com.crazybani.property.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.View

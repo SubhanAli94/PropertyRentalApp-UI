@@ -5,12 +5,13 @@ import android.graphics.drawable.AnimatedImageDrawable
 
 data class PropertyModel(
     var propertyImageUrl: String,
+    var propertyName: String,
     var propertyPrice: String,
     var propertyPriceDuration: String,
     var propertyType: String,
-    var numOfRooms: String,
+    var numOfBeds: String,
     var numOfBaths: String,
-    var address: String
+    var propertyAddress: String
 )
 
 

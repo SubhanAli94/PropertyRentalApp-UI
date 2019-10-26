@@ -2,7 +2,7 @@
 <resources>
     <dimen name="dp20">20dp</dimen>
     <dimen name="appBarHeight56dp">56dp</dimen>
-    <dimen name="dp120">120</dimen>
+    <dimen name="dp120">120dp</dimen>
     <dimen name="dp5">5dp</dimen>
     <dimen name="dp18">18dp</dimen>
     <dimen name="dp22">22dp</dimen>

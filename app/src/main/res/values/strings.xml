@@ -18,4 +18,5 @@
     <string name="find_your_house">Find your house</string>
     <string name="results_in_area">30 results in your area</string>
     <string name="popular">Popular</string>
+    <string name="allProperties">All Properties</string>
 </resources>
