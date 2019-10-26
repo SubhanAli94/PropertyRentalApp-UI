@@ -93,7 +93,10 @@
                     android:id="@+id/rv_popular_homeActivity"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp5"/>
+                    android:layout_marginTop="@dimen/dp5"
+                    android:clipToPadding="false"
+                    android:paddingStart="@dimen/dp5"
+                    android:paddingEnd="@dimen/dp5" />
 
             <TextView
                     android:id="@+id/txt_allProperties_homeActivity"
@@ -110,8 +113,8 @@
                     android:id="@+id/rv_allProperties_homeActivity"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:nestedScrollingEnabled="false"
-                    android:layout_marginTop="@dimen/dp5"/>
+                    android:layout_marginTop="@dimen/dp5"
+                    android:nestedScrollingEnabled="false" />
 
         </LinearLayout>
 
