@@ -36,7 +36,8 @@ class PropertyDetailActivity : AppCompatActivity(), OtherImagesAdapter.OnOtherIm
         with(propertyItem) {
             Picasso.get().load(attachedImagesURL[0])
                 .placeholder(R.color.colorPorcelain).into(img_property_detailActivity)
-            txt_location_detailActivity.text = propertyName
+            txt_propertyName_detailActivity.text = propertyName
+            txt_location_detailActivity.text = propertyAddress
             txt_price_detailActivity.text = propertyPrice
             txt_size_detailActivity.text = size
             txt_beds_detailActivity.text = numOfBeds + " " + getString(R.string.bedrooms)
