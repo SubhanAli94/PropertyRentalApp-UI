@@ -18,7 +18,7 @@
                 android:name=".ui.activities.PropertyDetailActivity"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity
-                android:name=".ui.activities.HomeActivity"
+                android:name=".ui.activities.SplashActivity"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoStatusBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,7 +39,7 @@
                 android:name=".ui.activities.RegistrationActivity"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity
-                android:name=".ui.activities.SplashActivity"
+                android:name=".ui.activities.HomeActivity"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
     </application>
 
