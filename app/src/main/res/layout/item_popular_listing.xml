@@ -23,7 +23,7 @@
             android:fontFamily="@font/poppins_regular"
             android:layout_marginTop="@dimen/dp5"
             android:text="Red House"
-            android:textColor="@color/charcoal"
+            android:textColor="@color/Black"
             android:textSize="@dimen/sp14"
             app:layout_constraintLeft_toLeftOf="@+id/img_house_popularItem"
             app:layout_constraintTop_toBottomOf="@+id/img_house_popularItem" />
