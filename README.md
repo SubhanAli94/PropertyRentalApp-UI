@@ -2,4 +2,6 @@
 
 In this project we'll list down properties available for rent.
 
-![ScreenShots][1.png] ![ScreenShots][2.png] ![ScreenShots][3.png] ![ScreenShots][4.png] ![ScreenShots][5.png] ![ScreenShots][7.png]
+
+<img alt="screenshot" src="/ScreenShots/1.png" width="25%" /><img alt="screenshot" src="/ScreenShots/2.png" width="25%" />
+<img alt="screenshot" src="/ScreenShots/3.png" width="25%" margin-left="25" /><img alt="screenshot" src="/ScreenShots/4.png" width="25%" /> <img alt="screenshot" src="/ScreenShots/5.png" width="25%" /><img alt="screenshot" src="/ScreenShots/6.png" width="25%" /><img alt="screenshot" src="/ScreenShots/7.png" width="25%" />
