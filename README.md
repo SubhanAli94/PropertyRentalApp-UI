@@ -1,6 +1,7 @@
-# [Work In Progress] Property Rental App - UI
+# Property Rental App - UI - [WIP]
+UI Designs implementation which can help anyone to get quickstart with pre-build styles, drawables etc.
 
-In this project we'll list down properties available for rent.
+### Design Inspirations:  [Rent App UI](https://www.uplabs.com/posts/property-rental-app) by [Teks Mobile](https://www.uplabs.com/teksmobile)
 
 
 <img alt="screenshot" src="/ScreenShots/1.png" width="25%" /> <img alt="screenshot" src="/ScreenShots/2.png" width="25%" />
