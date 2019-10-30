@@ -1,5 +1,7 @@
 package com.crazybani.property.ui.adapters
 
-public interface OnPropertyItemClickListener {
-    fun onPropertyItemClick(index: Int)
+import com.crazybani.property.service.models.PropertyModel
+
+interface OnPropertyItemClickListener {
+    fun onPropertyItemClick(propertyModel: PropertyModel)
 }

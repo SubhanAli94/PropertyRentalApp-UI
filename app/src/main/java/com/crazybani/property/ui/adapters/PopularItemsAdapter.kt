@@ -5,9 +5,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
+import com.crazybani.property.BR
 import com.crazybani.property.R
-import com.crazybani.property.models.PropertyModel
+import com.crazybani.property.service.models.PropertyModel
 import com.squareup.picasso.Picasso
 
 class PopularItemsAdapter(
@@ -17,9 +20,13 @@ class PopularItemsAdapter(
     RecyclerView.Adapter<PopularItemsAdapter.PopularItemViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PopularItemViewHolder {
-        var view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_popular_listing, parent, false)
-        return PopularItemViewHolder(view)
+        var binding = DataBindingUtil.inflate<ViewDataBinding>(
+            LayoutInflater.from(parent.context),
+            R.layout.item_popular_listing,
+            parent,
+            false
+        )
+        return PopularItemViewHolder(binding)
     }
 
     override fun getItemCount(): Int {
@@ -30,21 +37,24 @@ class PopularItemsAdapter(
         with(holder) {
             with(popularItems[position]) {
                 Picasso.get().load(propertyImageUrl).into(img_property)
-                txt_name.text = propertyName
-                txt_address.text = propertyAddress
-                txt_price.text = propertyPrice
             }
         }
 
+        holder.bind(popularItems[position])
+
         holder.img_property.setOnClickListener {
-            onPropertyItemClickListener.onPropertyItemClick(position)
+            onPropertyItemClickListener.onPropertyItemClick(popularItems[position])
         }
     }
 
-    class PopularItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class PopularItemViewHolder(private val viewDataBinding: ViewDataBinding) :
+        RecyclerView.ViewHolder(viewDataBinding.root) {
+
+        fun bind(propertyModel: PropertyModel) {
+            viewDataBinding.setVariable(BR.propertyModel, propertyModel)
+            viewDataBinding.executePendingBindings()
+        }
+
         var img_property = itemView.findViewById<ImageView>(R.id.img_house_popularItem)
-        var txt_name = itemView.findViewById<TextView>(R.id.txt_homeName_popularItem)
-        var txt_price = itemView.findViewById<TextView>(R.id.txt_price_popularItem)
-        var txt_address = itemView.findViewById<TextView>(R.id.txt_address_popularItem)
     }
 }

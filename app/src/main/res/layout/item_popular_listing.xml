@@ -1,62 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+
+<layout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="190dp"
-        android:layout_height="240dp"
-        android:outlineProvider="background"
-        android:paddingLeft="@dimen/dp5"
-        android:paddingRight="@dimen/dp5">
+        xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.cardview.widget.CardView
-            android:id="@+id/card_imgProperty_popularItem"
-            android:layout_width="180dp"
-            android:layout_height="150dp"
-            app:cardCornerRadius="@dimen/dp5"
-            app:cardElevation="@dimen/dp0"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+    <data>
 
-        <ImageView
-                android:id="@+id/img_house_popularItem"
+        <variable
+                name="propertyModel"
+                type="com.crazybani.property.service.models.PropertyModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="190dp"
+            android:layout_height="240dp"
+            android:outlineProvider="background"
+            android:paddingLeft="@dimen/dp5"
+            android:paddingRight="@dimen/dp5">
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/card_imgProperty_popularItem"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/popular_house_1" />
-    </androidx.cardview.widget.CardView>
+                app:cardCornerRadius="@dimen/dp5"
+                app:cardElevation="@dimen/dp0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-            android:id="@+id/txt_homeName_popularItem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp5"
-            android:fontFamily="@font/poppins_regular"
-            android:text="Red House"
-            android:textColor="@color/Black"
-            android:textSize="@dimen/sp14"
-            app:layout_constraintLeft_toLeftOf="@+id/card_imgProperty_popularItem"
-            app:layout_constraintTop_toBottomOf="@+id/card_imgProperty_popularItem" />
+            <ImageView
+                    android:id="@+id/img_house_popularItem"
+                    android:layout_width="180dp"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/popular_house_1" />
+        </androidx.cardview.widget.CardView>
 
-    <TextView
-            android:id="@+id/txt_price_popularItem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_regular"
-            android:text="$35000/yr"
-            android:textColor="@color/charcoal"
-            android:textSize="@dimen/sp12"
-            app:layout_constraintLeft_toLeftOf="@+id/txt_homeName_popularItem"
-            app:layout_constraintTop_toBottomOf="@+id/txt_homeName_popularItem" />
+        <TextView
+                android:id="@+id/txt_homeName_popularItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@{propertyModel.propertyName}"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/sp14"
+                app:layout_constraintLeft_toLeftOf="@+id/card_imgProperty_popularItem"
+                app:layout_constraintTop_toBottomOf="@+id/card_imgProperty_popularItem"
+                tools:text="Red House" />
 
-    <TextView
-            android:id="@+id/txt_address_popularItem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_regular"
-            android:text="49 London Street, New York"
-            android:textColor="@color/charcoal"
-            android:textSize="@dimen/sp12"
-            app:layout_constraintLeft_toLeftOf="@+id/txt_price_popularItem"
-            app:layout_constraintTop_toBottomOf="@+id/txt_price_popularItem" />
+        <TextView
+                android:id="@+id/txt_price_popularItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                tools:text="$35000/yr"
+                android:text="@{propertyModel.propertyPrice}"
+                android:textColor="@color/charcoal"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_homeName_popularItem"
+                app:layout_constraintTop_toBottomOf="@+id/txt_homeName_popularItem" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+                android:id="@+id/txt_address_popularItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                tools:text="49 London Street, New York"
+                android:text="@{propertyModel.propertyAddress}"
+                android:textColor="@color/charcoal"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_price_popularItem"
+                app:layout_constraintTop_toBottomOf="@+id/txt_price_popularItem" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

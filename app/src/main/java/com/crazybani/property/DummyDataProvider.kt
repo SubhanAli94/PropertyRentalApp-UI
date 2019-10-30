@@ -1,24 +1,25 @@
 package com.crazybani.property
 
-import com.crazybani.property.models.PropertyModel
+import com.crazybani.property.service.models.PropertyModel
 
 object DummyDataProvider {
 
-    lateinit var propertiesList: ArrayList<PropertyModel>
-    lateinit var popularPropertiesList: ArrayList<PropertyModel>
-
-    fun getPropetiesListing() {
-        propertiesList = arrayListOf()
+    fun getPropertiesListing(): ArrayList<PropertyModel> {
+        var propertiesList = arrayListOf<PropertyModel>()
         repeat((0..10).count()) {
             propertiesList.add(getDummyPropertyDataModel(it))
         }
+
+        return propertiesList
     }
 
-    fun getPopularPropetiesListing() {
-        popularPropertiesList = arrayListOf()
+    fun getPopularPropertiesListing(): ArrayList<PropertyModel> {
+        var popularPropertiesList = arrayListOf<PropertyModel>()
         repeat((0..5).count()) {
             popularPropertiesList.add(getDummyPropertyDataModel(it))
         }
+
+        return popularPropertiesList
     }
 
     private fun getDummyPropertyDataModel(index: Int): PropertyModel {

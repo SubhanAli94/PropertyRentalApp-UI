@@ -1,4 +1,4 @@
-package com.crazybani.property.models
+package com.crazybani.property.service.models
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
